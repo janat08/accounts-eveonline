@@ -36,9 +36,9 @@ The following information will be added to `Meteor.users` records:
 
 `accounts-eveonline` exposes `EveonlineHelpers` object with following helper functions:
 
-### refreshAuthToken(user)
+### refreshAuthToken(user, char)
 
-Calling `EveonlineHelpers.refreshAuthToken(meteorUserRecord)` will attempt to obtain new auth token from SSO server by using the refresh token.
+Calling `EveonlineHelpers.refreshAuthToken(meteorUserRecord, charName)` will attempt to obtain new auth token from SSO server by using the refresh token.
 
 Available only server-side. If successful, data gets updated in `Meteor.users` collection.
 
