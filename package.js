@@ -1,7 +1,7 @@
 Package.describe({
   name: 'tmikoss:accounts-eveonline',
-  version: '0.1.1',
-  summary: 'Authentication with EvE Online SSO',
+  version: '1.0.0',
+  summary: 'Concurrent authentication with EvE Online SSO',
   git: 'https://github.com/tmikoss/accounts-eveonline.git',
   documentation: 'README.md'
 });
@@ -23,6 +23,8 @@ Package.onUse(function(api) {
   api.addFiles('lib/eveonline_server.js', 'server');
   api.addFiles('lib/eveonline_client.js', 'client');
   api.addFiles('lib/eveonline_server_helpers.js', 'server');
+  api.addFiles('lib/accouts.js', 'server')
 
   api.export('EveonlineHelpers', 'server');
+
 });
