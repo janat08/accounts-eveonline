@@ -42,8 +42,8 @@ Calling `EveonlineHelpers.refreshAuthToken(meteorUserRecord)` will attempt to ob
 
 Available only server-side. If successful, data gets updated in `Meteor.users` collection.
 
-### changeOfOwnerShip(userId, charName)
+### changeOfOwnerofChar(userId, charName)
 
-`EveonlineHelpers.changeOfOwnerShip(userId, charName)` is meant to be redefined on startup (so that package loads first and then your definition takes hold), so that it calls logic meant to deal with situation where owner of character has changed, user 1 with char 1 posts comment, user 2 now owns char 1, and thus it would make sense to delete/mark posts made by user 1 and rescind posting/viewing rights if its restricted topic.
+`EveonlineHelpers.changeOfOwnerOfChar(userId, charName)` is meant to be redefined on startup (so that package loads first and then your definition takes hold), so that it calls logic meant to deal with situation where owner of character has changed, user 1 with char 1 posts comment, user 2 now owns char 1, and thus it would make sense to delete/mark posts made by user 1 and rescind posting/viewing rights if its restricted topic.
 
 Available only server-side. If successful, data gets updated in `Meteor.users` collection.
